@@ -40,11 +40,11 @@ def get_birthday_weekday(current_weekday: int, current_day: int, birthday_day: i
     
     current_day and birthday_day are both in the range of 1 - 365. 
        
-    >>>get_birthday_weekday(5, 3, 4)
+    >>> get_birthday_weekday(5, 3, 4)
     6
-    >>>get_birthday_weekday(5, 3, 116)
+    >>> get_birthday_weekday(5, 3, 116)
     6
-    >>>get_birthday_weekday(6, 116, 3)
+    >>> get_birthday_weekday(6, 116, 3)
     5
     """
     days_diff = days_difference(current_day, birthday_day)
