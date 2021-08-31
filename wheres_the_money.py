@@ -51,4 +51,4 @@ def main():
         print("<<<MAX TAX HAS BEEN REACHED>>>")
     if extraAnually < 0:
         print("<<<OUT OF FUNDS BUDGET BETTER>>>")
-main()
+main( )
