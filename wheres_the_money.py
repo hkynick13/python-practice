@@ -47,5 +47,8 @@ def main():
     print("| travel        | $" + (" " * (10 - len(str(travelAnnually)))) + str(travelAnnually) + " |" + (" " * (6 - len(str(travelPercentage)))) + str(travelPercentage) + "% | " + "#" * int(travelPercentage))
     print("| tax           | $" + (" " * (10 - len(str(taxAnnually)))) + str(taxAnnually) + " |" + (" " * (6 - len(str(taxPercentage))))  + str(taxPercentage) + "% | " + "#" * int(taxPercentage))
     print("| extra         | $" + (" " * (10 - len(str(extraAnually))))  + str(extraAnually)  + " |" + (" " * (6 - len(str(extraAnually / salaryAnnually * 100)))) + (str(extraAnually / salaryAnnually * 100)) + "% | " + "#" * int(extraAnually / salaryAnnually * 100))
-
+    if taxAnnually >= 50000:
+        print("<<<MAX TAX HAS BEEN REACHED>>>")
+    if extraAnually < 0:
+        print("<<<OUT OF FUNDS BUDGET BETTER>>>")
 main()
